@@ -24,7 +24,7 @@ Style/RedundantSelf:
   Enabled: false
 
 IndentationConsistency:
-  EnforcedStyle: 'rails'
+  EnforcedStyle: indented_internal_methods
 
 Metrics/MethodLength:
   Max: 20
