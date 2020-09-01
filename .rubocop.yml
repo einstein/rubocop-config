@@ -1,0 +1,48 @@
+AllCops:
+  # TargetRubyVersion: 1.9
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'test/**/*.rb'
+    - 'app/views/**/*.html.erb'
+    - !ruby/regexp /old_and_unused\.rb$/
+    - 'vendor/bundle/**/*'
+    - 'bin/*'
+
+# Rails:
+#   Enabled: true
+
+Style/RedundantReturn:
+  Enabled: false
+
+Style/RedundantSelf:
+  Enabled: false
+
+IndentationConsistency:
+  EnforcedStyle: 'rails'
+
+Metrics/MethodLength:
+  Max: 20
+
+Documentation:
+  Enabled: false
+
+HasAndBelongsToMany: # being used for a reason
+  Enabled: false
+
+# FrozenStringLiteralComment:
+#   Enabled: false
+
+HashSyntax:
+  Enabled: false
+
+ActionFilter:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
